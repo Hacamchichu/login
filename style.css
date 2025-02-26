@@ -17,6 +17,7 @@ body{
 h2{
     margin-bottom: 16px;
     color: #333;
+    user-select: none;
 }
 .gender {
     text-align: left;
@@ -25,6 +26,7 @@ h2{
 .input{
     text-align: left;
     margin-bottom: 16px;
+    user-select: none;
 }
 .input label{
     display: block;
@@ -49,6 +51,7 @@ button{
     font-size: 16px;
     cursor:pointer;
     transition: 0.3s;
+    user-select: none;
 }
 button:hover {
     background-color: #e64a19;
@@ -101,4 +104,23 @@ button:hover {
 .remember input[typut="checkbox"]:checked::after
 {
     display: block;
+}
+.remember label{
+    user-select: none;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 5px;
+}
+.gender label{
+    user-select: none;
+    cursor: pointer;
+}
+.input input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    user-select: none;
 }
