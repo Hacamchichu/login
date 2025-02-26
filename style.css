@@ -53,3 +53,52 @@ button{
 button:hover {
     background-color: #e64a19;
 }
+.gender input[type="radio"]
+{
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ff5722;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.gender input[type="radio"]:checked
+{
+    background-color: #ff5722;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px #ff5722;
+}
+.remember input[type="checkbox"]
+{
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ff5722;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.remember input[type="checkbox"]:checked
+{
+    background-color: #ff5722;
+    border-color: #ff5722 ;
+}
+.remember input[type="checkbox"]::after
+{
+    content: "✔";
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.remember input[typut="checkbox"]:checked::after
+{
+    display: block;
+}
